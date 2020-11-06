@@ -3,10 +3,10 @@
   "minVersion": "0.8",
   "package": "me.drex.nobundledupe.mixin",
   "compatibilityLevel": "JAVA_8",
-  "server": [
-
-  ],
   "injectors": {
     "defaultRequire": 1
-  }
+  },
+  "mixins": [
+    "BundleItemMixin"
+  ]
 }
