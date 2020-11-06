@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "nobundledupe",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "No Bundle Dupe",
+  "description": "This mod aims to fix a bundle dupe introduced in 20w45a!",
   "authors": [
-    "Me!"
+    "DrexHD"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -19,11 +19,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "me.drex.nobundledupe.EntryPoint"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "nobundledupe.mixins.json"
   ],
 
   "depends": {
