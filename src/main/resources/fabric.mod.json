@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "nobundledupe",
+  "id": "nodupe",
   "version": "${version}",
 
-  "name": "No Bundle Dupe",
-  "description": "This mod aims to fix a bundle dupe introduced in 20w45a!",
+  "name": "No Dupe",
+  "description": "This mod aims to fix three duplications introduced in 20w45a!",
   "authors": [
     "DrexHD"
   ],
@@ -19,11 +19,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "me.drex.nobundledupe.EntryPoint"
+      "me.drex.nodupe.EntryPoint"
     ]
   },
   "mixins": [
-    "nobundledupe.mixins.json"
+    "nodupe.mixins.json"
   ],
 
   "depends": {

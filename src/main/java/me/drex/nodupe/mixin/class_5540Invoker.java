@@ -1,4 +1,4 @@
-package me.drex.nobundledupe.mixin;
+package me.drex.nodupe.mixin;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.class_5540;
@@ -8,8 +8,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Invoker;
 
 @Mixin(class_5540.class)
-public class class_5540Invoker {
-
+public interface class_5540Invoker {
 
     @Invoker("method_31614")
     static void method_31614(BlockState blockState, WorldAccess worldAccess, BlockPos blockPos) {

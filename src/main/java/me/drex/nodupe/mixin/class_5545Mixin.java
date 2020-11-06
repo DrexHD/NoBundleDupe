@@ -1,10 +1,7 @@
-package me.drex.nobundledupe.mixin;
+package me.drex.nodupe.mixin;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.CakeBlock;
-import net.minecraft.class_5540;
 import net.minecraft.class_5545;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -26,7 +23,6 @@ import static net.minecraft.block.Block.dropStacks;
 public abstract class class_5545Mixin {
     @Shadow
     protected static boolean method_31634(BlockHitResult blockHitResult) {
-        System.out.println("method_31634");
         return false;
     }
 
@@ -41,7 +37,6 @@ public abstract class class_5545Mixin {
     @Overwrite
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         ItemStack itemStack = player.getStackInHand(hand);
-        System.out.println(itemStack.getName().getString());
         if (!itemStack.itemMatches(Items.FLINT_AND_STEEL) && !itemStack.itemMatches(Items.FIRE_CHARGE)) {
             if (method_31634(hit) && player.getStackInHand(hand).isEmpty() && state.get(field_27183)) {
                 class_5540Invoker.method_31614(state, world, pos);

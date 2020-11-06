@@ -1,4 +1,4 @@
-package me.drex.nobundledupe.mixin;
+package me.drex.nodupe.mixin;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.piston.PistonBehavior;

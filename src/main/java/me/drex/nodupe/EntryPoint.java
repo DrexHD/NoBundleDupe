@@ -1,4 +1,4 @@
-package me.drex.nobundledupe;
+package me.drex.nodupe;
 
 import net.fabricmc.api.ModInitializer;
 

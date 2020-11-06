@@ -1,4 +1,4 @@
-package me.drex.nobundledupe.mixin;
+package me.drex.nodupe.mixin;
 
 import net.minecraft.item.BundleItem;
 import net.minecraft.item.ItemStack;
