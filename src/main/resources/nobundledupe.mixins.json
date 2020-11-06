@@ -8,7 +8,9 @@
   },
   "mixins": [
     "BundleItemMixin",
-    "CakeBlockAccessor",
+    "CakeBlockInvoker",
+    "class_5540Invoker",
+    "class_5542Mixin",
     "class_5545Mixin"
   ]
 }

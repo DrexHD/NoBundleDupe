@@ -10,6 +10,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(BundleItem.class)
 public abstract class BundleItemMixin {
 
+    /*
+    * This method blocks players from putting more than one bundle inside a bundle
+    * */
     @Inject(method = "method_31562", at = @At("HEAD"), cancellable = true)
     private static void getCount(ItemStack itemStack, CallbackInfoReturnable<Integer> cir) {
         cir.setReturnValue(64 / itemStack.getMaxCount());

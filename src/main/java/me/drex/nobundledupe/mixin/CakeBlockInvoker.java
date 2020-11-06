@@ -7,10 +7,13 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.WorldAccess;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.gen.Invoker;
 
 @Mixin(CakeBlock.class)
-public class CakeBlockAccessor {
+public interface CakeBlockInvoker {
+
+    @Invoker("tryEat")
     static ActionResult tryEat(WorldAccess worldAccess, BlockPos blockPos, BlockState blockState, PlayerEntity playerEntity) {
-        return tryEat(worldAccess, blockPos, blockState, playerEntity);
+        throw new AssertionError();
     }
 }
