@@ -7,10 +7,5 @@
     "defaultRequire": 1
   },
   "mixins": [
-    "BundleItemMixin",
-    "CakeBlockInvoker",
-    "class_5540Invoker",
-    "class_5542Mixin",
-    "class_5545Mixin"
   ]
 }
